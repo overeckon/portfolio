@@ -4,6 +4,9 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+html{
+     overflow-x: hidden;
+    }
 body {
     font-family: sans-serif;
     font-size: 16px;
