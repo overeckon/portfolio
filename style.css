@@ -500,6 +500,102 @@ footer {
 .footer-back:hover { color: var(--accent-blue); }
 
 /* ============================================================
+   RESUME
+   ============================================================ */
+.resume-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.resume-desc {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.btn-ghost-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  transition: all 0.25s;
+}
+.btn-ghost-resume svg { width: 16px; height: 16px; }
+.btn-ghost-resume:hover { border-color: var(--border-h); color: var(--text); background: rgba(255,255,255,0.04); }
+
+.resume-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.rm-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  font-size: 0.88rem;
+}
+.rm-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--star);
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.cv-preview-frame {
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  background: rgba(255,255,255,0.02);
+  transition: border-color 0.3s;
+}
+.cv-preview-frame:hover { border-color: var(--border-h); }
+
+.cv-frame-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+}
+.cv-frame-dots {
+  display: flex;
+  gap: 5px;
+}
+.cv-frame-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.cv-preview-frame iframe {
+  display: block;
+  width: 100%;
+  height: 600px;
+  border: none;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* ============================================================
    REVEAL
    ============================================================ */
 /* reveal: hidden only when JS is ready, so content never disappears if JS is slow */
