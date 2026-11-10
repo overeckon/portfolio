@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anant Parashar — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700;1,900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-left">
+      <span class="nav-logo">AP<span class="star">✳</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Say hello</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-status"><span class="live-dot"></span>LIVE</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-meta-top">
+        <span class="mono tag-label">AP / STATUS — SESSION LIVE</span>
+        <span class="mono tag-label">DELHI, INDIA · OPEN TO ROLES</span>
+      </div>
+
+      <div class="hero-headline">
+        <h1>
+          <span class="line">I build</span>
+          <span class="line italic accent-word">intelligent</span>
+          <span class="line">systems.</span>
+        </h1>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="terminal-line"><span class="prompt">$</span> <span class="mono">whoami</span></div>
+        <div class="terminal-line out"><span class="mono">anant-parashar</span></div>
+        <div class="terminal-line"><span class="prompt">$</span> <span class="mono">current_focus</span></div>
+        <div class="terminal-line out"><span class="mono" id="typed-text"></span><span class="cursor-blink">_</span></div>
+      </div>
+
+      <div class="hero-disciplines">
+        <span>SOFTWARE ENGINEERING <span class="star">✳</span></span>
+        <span>GENERATIVE AI <span class="star">✳</span></span>
+        <span>DISTRIBUTED SYSTEMS</span>
+      </div>
+
+      <a href="#projects" class="btn-cta">EXPLORE THE WORK ↓</a>
+
+      <div class="hero-stats-row">
+        <div class="hstat"><span class="hstat-num">160K+</span><span class="hstat-label">LOC SHIPPED</span></div>
+        <div class="hstat-sep">✳</div>
+        <div class="hstat"><span class="hstat-num">97%</span><span class="hstat-label">AI ACCURACY</span></div>
+        <div class="hstat-sep">✳</div>
+        <div class="hstat"><span class="hstat-num">80%</span><span class="hstat-label">COST CUT</span></div>
+        <div class="hstat-sep">✳</div>
+        <div class="hstat"><span class="hstat-num">3+</span><span class="hstat-label">YRS EXP</span></div>
+      </div>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>GENERATIVE AI <span class="star">✳</span></span>
+        <span>AGENT ORCHESTRATION <span class="star">✳</span></span>
+        <span>DISTRIBUTED SYSTEMS <span class="star">✳</span></span>
+        <span>ML PIPELINES <span class="star">✳</span></span>
+        <span>LLM APPLICATIONS <span class="star">✳</span></span>
+        <span>BACKEND ENGINEERING <span class="star">✳</span></span>
+        <span>AWS BEDROCK <span class="star">✳</span></span>
+        <span>RAG SYSTEMS <span class="star">✳</span></span>
+        <span>KUBERNETES <span class="star">✳</span></span>
+        <span>GENERATIVE AI <span class="star">✳</span></span>
+        <span>AGENT ORCHESTRATION <span class="star">✳</span></span>
+        <span>DISTRIBUTED SYSTEMS <span class="star">✳</span></span>
+        <span>ML PIPELINES <span class="star">✳</span></span>
+        <span>LLM APPLICATIONS <span class="star">✳</span></span>
+        <span>BACKEND ENGINEERING <span class="star">✳</span></span>
+        <span>AWS BEDROCK <span class="star">✳</span></span>
+        <span>RAG SYSTEMS <span class="star">✳</span></span>
+        <span>KUBERNETES <span class="star">✳</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 — ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num mono">01</span>
+        <span class="section-slash">/</span>
+        <span class="section-name">ABOUT</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="photo-frame">
+            <img src="anant.png" alt="Anant Parashar" />
+            <div class="photo-tag top-tag mono">SOFTWARE ENGINEER</div>
+            <div class="photo-tag bot-tag mono">DELHI, INDIA</div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <h2 class="section-headline">Curious about what's <em>possible.</em></h2>
+          <p>I'm a Software Engineer specializing in Generative AI and distributed backend systems. I don't wire up LLM APIs — I build the orchestration layers, evaluation frameworks, and feedback loops that make AI <em>production-ready.</em></p>
+          <p>Currently at <strong>Intoglo</strong>, I architected an AI-powered logistics SaaS from scratch: 3 services, ~160K lines of code, 17 shipping carriers, extraction accuracy that rivals human review — and an AI agent that writes and validates its own extraction logic.</p>
+          <p>Before that I spent time at <strong>IDEMIA</strong> and <strong>Global ITCombine</strong> building high-throughput backend systems. I know how to build things that don't break under real traffic.</p>
+
+          <div class="about-status-cards">
+            <div class="status-card">
+              <span class="mono status-label">CURRENTLY</span>
+              <span>Software Engineer — AI Applications @ Intoglo</span>
+            </div>
+            <div class="status-card">
+              <span class="mono status-label">BASED IN</span>
+              <span>Delhi, India</span>
+            </div>
+            <div class="status-card">
+              <span class="mono status-label">EXPLORING</span>
+              <span>GenAI × Systems × Scale</span>
+            </div>
+          </div>
+
+          <div class="about-links">
+            <a href="https://linkedin.com/in/overeckon" target="_blank" class="link-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LINKEDIN
+            </a>
+            <a href="https://github.com/overeckon" target="_blank" class="link-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GITHUB
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 — WORK -->
+  <section id="work" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num mono">02</span>
+        <span class="section-slash">/</span>
+        <span class="section-name">WORK EXPERIENCE</span>
+      </div>
+      <h2 class="section-headline">Less theatre. <em>More building.</em></h2>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <div class="tl-dot active"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass">
+            <div class="tl-card-top">
+              <div class="tl-meta">
+                <span class="mono file-label">FILE 01 / CURRENT</span>
+                <h3>Software Engineer — AI Applications</h3>
+                <p class="company-name">Intoglo <span class="sep">·</span> Delhi, India</p>
+              </div>
+              <span class="date-chip mono">APR 2026 – PRESENT</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Built end-to-end <strong>AI-powered logistics SaaS</strong> (~160K LOC) — 3 services, 17 carriers, every core workflow GenAI-driven</li>
+              <li>Designed a <strong>self-learning ML pipeline</strong> with 40+ extractors: reverse-engineers regex from PDFs, persists LLM strategies in MongoDB, auto-consolidates patterns — <em class="metric">97% on invoices · 100% on bills of lading</em></li>
+              <li>Built a <strong>cost-optimized 4-tier classifier</strong>: hash cache → rules → Gemini LLM → OCR fallback — <em class="metric">~80% cost reduction</em> vs LLM-first</li>
+              <li>Implemented an <strong>LLM strategy builder</strong> with 3-phase evaluation (shadow → confidence → independent) — AI that writes and validates its own extraction logic</li>
+              <li>Designed an <strong>AI copilot</strong> (AWS Bedrock) with agent orchestration, structured tool use, session persistence, model routing</li>
+              <li>Built <strong>22-step workflow state machine</strong> with parallel cascading, approval gates, RBAC across 6 roles</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Python</span><span>FastAPI</span><span>Gemini API</span><span>AWS Bedrock</span><span>LangChain</span><span>MongoDB</span><span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card glass">
+            <div class="tl-card-top">
+              <div class="tl-meta">
+                <span class="mono file-label">FILE 02</span>
+                <h3>Software Engineer — Backend Systems</h3>
+                <p class="company-name">Global ITCombine <span class="sep">·</span> Client: OneAssist / ITC</p>
+              </div>
+              <span class="date-chip mono">DEC 2025 – APR 2026</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Reduced API latency by <em class="metric">35%</em> across services handling 10K+ daily requests via query plan analysis and caching</li>
+              <li>Built async REST APIs (FastAPI) and resolved high-concurrency bottlenecks via SQL optimization and index redesign</li>
+            </ul>
+            <div class="tl-tags">
+              <span>FastAPI</span><span>Python</span><span>SQL</span><span>Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card glass">
+            <div class="tl-card-top">
+              <div class="tl-meta">
+                <span class="mono file-label">FILE 03</span>
+                <h3>Software Engineer — Backend Systems</h3>
+                <p class="company-name">IDEMIA</p>
+              </div>
+              <span class="date-chip mono">AUG 2023 – DEC 2025</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Built secure enterprise backend services for high-volume identity verification; improved system reliability by <em class="metric">25%</em></li>
+              <li>Optimized database performance on large-scale datasets via index tuning, query plan analysis, schema normalization</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Python</span><span>Java</span><span>MySQL</span><span>System Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num mono">03</span>
+        <span class="section-slash">/</span>
+        <span class="section-name">PROJECTS</span>
+      </div>
+      <h2 class="section-headline">Things I've put <em>in motion.</em></h2>
+      <p class="section-sub mono">03 BUILDS / 02 FEATURED</p>
+
+      <div class="projects-grid">
+
+        <div class="project-file reveal featured-file">
+          <div class="file-top">
+            <span class="mono file-num">FILE 01 / FEATURED</span>
+            <div class="file-visual">
+              <div class="pipeline-viz">
+                <div class="pipe-step">INPUT</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step">CLASSIFY</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step active">EXTRACT</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step">LEARN</div>
+              </div>
+            </div>
+          </div>
+          <div class="file-body">
+            <h3>Self-Learning Document<br/>Intelligence Engine</h3>
+            <p>Config-driven extraction engine with 30+ composable pipeline operators. A "Correct &amp; Train" feedback loop auto-learns from human corrections. New carrier support = zero code changes, one JSON config.</p>
+            <div class="file-metrics">
+              <div class="fm"><span class="fm-num">97%</span><span class="fm-label">invoice accuracy</span></div>
+              <div class="fm"><span class="fm-num">100%</span><span class="fm-label">bills of lading</span></div>
+              <div class="fm"><span class="fm-num">40+</span><span class="fm-label">extractors</span></div>
+            </div>
+          </div>
+          <div class="file-tech">
+            <span>Python</span><span>FastAPI</span><span>Gemini API</span><span>TensorFlow</span><span>RapidOCR</span><span>MongoDB</span><span>K8s</span>
+          </div>
+        </div>
+
+        <div class="project-file reveal">
+          <div class="file-top">
+            <span class="mono file-num">FILE 02 / FEATURED</span>
+            <div class="file-visual agent-viz">
+              <div class="agent-loop">
+                <div class="al-step">QUERY</div>
+                <div class="al-arrow">↓</div>
+                <div class="al-step al-active">REASON</div>
+                <div class="al-arrow">↓</div>
+                <div class="al-step">TOOL USE</div>
+                <div class="al-arrow">↓</div>
+                <div class="al-step">RESPOND</div>
+              </div>
+            </div>
+          </div>
+          <div class="file-body">
+            <h3>AI Copilot with<br/>Agent Orchestration</h3>
+            <p>An agentic AI assistant where the LLM decides which tools to invoke based on natural language. Session persistence, model routing, and structured output parsing enabling downstream automation.</p>
+          </div>
+          <div class="file-tech">
+            <span>AWS Bedrock</span><span>LangChain</span><span>TypeScript</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="project-file reveal">
+          <div class="file-top">
+            <span class="mono file-num">FILE 03</span>
+            <div class="file-visual cost-viz">
+              <div class="tier-list">
+                <div class="tier t1"><span class="mono">L1</span> HASH CACHE</div>
+                <div class="tier t2"><span class="mono">L2</span> RULE SCORER</div>
+                <div class="tier t3"><span class="mono">L3</span> GEMINI LLM</div>
+                <div class="tier t4"><span class="mono">L4</span> OCR FALLBACK</div>
+              </div>
+            </div>
+          </div>
+          <div class="file-body">
+            <h3>Cost-Optimized LLM<br/>Classification Pipeline</h3>
+            <p>4-tier architecture that pushes LLM inference to last resort. Reduces cost by ~80% while maintaining accuracy across scanned, corrupted-font, and clean PDFs.</p>
+            <div class="file-metrics">
+              <div class="fm"><span class="fm-num">80%</span><span class="fm-label">cost reduction</span></div>
+            </div>
+          </div>
+          <div class="file-tech">
+            <span>Python</span><span>Gemini API</span><span>OCR</span><span>GCP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 — SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num mono">04</span>
+        <span class="section-slash">/</span>
+        <span class="section-name">SKILLS</span>
+      </div>
+      <h2 class="section-headline">Tools I reach <em>for.</em></h2>
+      <p class="section-sub mono">NO FAKE PROFICIENCY SCORES — DRAG THE TAGS</p>
+
+      <div id="skills-arena">
+        <div class="skill-tag" data-vx="2" data-vy="-1">Python</div>
+        <div class="skill-tag" data-vx="-2" data-vy="1">TypeScript</div>
+        <div class="skill-tag" data-vx="1" data-vy="2">JavaScript</div>
+        <div class="skill-tag" data-vx="-1" data-vy="-2">SQL</div>
+        <div class="skill-tag" data-vx="2" data-vy="1">Java</div>
+        <div class="skill-tag" data-vx="-2" data-vy="-1">FastAPI</div>
+        <div class="skill-tag" data-vx="1" data-vy="-2">Node.js</div>
+        <div class="skill-tag" data-vx="-1" data-vy="2">Next.js</div>
+        <div class="skill-tag" data-vx="2" data-vy="-2">LangChain</div>
+        <div class="skill-tag" data-vx="-2" data-vy="2">Gemini API</div>
+        <div class="skill-tag" data-vx="1" data-vy="1">AWS Bedrock</div>
+        <div class="skill-tag" data-vx="-1" data-vy="-1">TensorFlow</div>
+        <div class="skill-tag" data-vx="2" data-vy="0">MongoDB</div>
+        <div class="skill-tag" data-vx="-2" data-vy="0">Redis</div>
+        <div class="skill-tag" data-vx="0" data-vy="2">Docker</div>
+        <div class="skill-tag" data-vx="0" data-vy="-2">Kubernetes</div>
+        <div class="skill-tag" data-vx="1.5" data-vy="1.5">RAG</div>
+        <div class="skill-tag" data-vx="-1.5" data-vy="-1.5">CI/CD</div>
+      </div>
+
+      <div class="skills-categories">
+        <div class="sc-group reveal">
+          <span class="mono sc-label">AI / GENAI</span>
+          <p>LLM Application Design · Prompt Engineering · Agent Orchestration · Model Evaluation · Fine-Tuning · RAG · Multimodal AI · ML Pipelines · OCR</p>
+        </div>
+        <div class="sc-group reveal">
+          <span class="mono sc-label">BACKEND</span>
+          <p>FastAPI · Node.js · Express · Microservices · Distributed Systems · AsyncIO · REST APIs · System Design · RBAC</p>
+        </div>
+        <div class="sc-group reveal">
+          <span class="mono sc-label">CLOUD & INFRA</span>
+          <p>GCP / Vertex AI · AWS (S3, Bedrock, EC2) · Docker · Kubernetes (Helm) · CI/CD · MongoDB · MySQL · Redis</p>
+        </div>
+        <div class="sc-group reveal">
+          <span class="mono sc-label">FRONTEND</span>
+          <p>Next.js · React 19 · Tailwind CSS · NextAuth · Firebase</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 — CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num mono">05</span>
+        <span class="section-slash">/</span>
+        <span class="section-name">CONTACT</span>
+      </div>
+      <div class="contact-inner">
+        <h2 class="section-headline contact-headline">Let's make something <em>matter.</em></h2>
+        <p class="contact-desc">I'm looking for roles where I can build AI systems that actually matter — at the intersection of LLMs, production engineering, and real-world impact. If that's your team, let's talk.</p>
+
+        <a href="mailto:anantparashar1@gmail.com" class="btn-cta btn-cta-large">
+          <span class="star">✳</span> START A CONVERSATION
+        </a>
+
+        <div class="contact-links">
+          <a href="mailto:anantparashar1@gmail.com" class="contact-link">
+            <span class="mono contact-link-label">EMAIL</span>
+            <span>anantparashar1@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/overeckon" target="_blank" class="contact-link">
+            <span class="mono contact-link-label">LINKEDIN</span>
+            <span>linkedin.com/in/overeckon</span>
+          </a>
+          <a href="https://github.com/overeckon" target="_blank" class="contact-link">
+            <span class="mono contact-link-label">GITHUB</span>
+            <span>github.com/overeckon</span>
+          </a>
+          <a href="tel:+917895460945" class="contact-link">
+            <span class="mono contact-link-label">PHONE</span>
+            <span>+91 78954 60945</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="mono footer-logo">AP<span class="star">✳</span> / DELHI, INDIA</span>
+      <span class="mono footer-copy">ENGINEER BY PROFESSION · BUILDER BY INSTINCT</span>
+      <a href="#hero" class="mono footer-back">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
